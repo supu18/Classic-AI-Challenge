@@ -10,7 +10,7 @@
             "request": "launch",
             // "program": "${file}",
             "console": "integratedTerminal",
-            "program": "${workspaceFolder}/src/data_preprocessing.py",
+            "program": "${file}",
             "cwd": "${workspaceFolder}/src"
         }
     ]
