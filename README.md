@@ -1,7 +1,8 @@
 # Classic-AI-Challenge
 Digital Product School Challenge
 
-This repository contains the code for the Classic AI Challenge, a project developed as part of the Digital Product School program. The challenge focuses on implementing classic AI algorithms and techniques to solve various problems.
+This repository contains the code for the Classic AI Challenge, a project developed as part of the Digital Product School program. The challenge focuses on implementing classic AI algorithms to predict traffic accidents, specifically alcohol-related accidents, using time series forecasting techniques.
+
 
 # Installation
 To set up the project, follow these steps:
