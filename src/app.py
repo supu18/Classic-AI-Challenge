@@ -5,6 +5,10 @@ import os
 from prediction import predict
 
 app = Flask(__name__)
+
+model_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'models', 'alcohol_accidents_model.pkl'))
+
+
 @app.route('/predict', methods=['POST'])
 
 def predict_route():
@@ -18,8 +22,7 @@ def predict_route():
     
     year = data.get('year', 2021)
     month = data.get('month', 1)
-    
-    model_path = '../models/alcohol_accidents_model.pkl'
+
     
     if not os.path.exists(model_path):
         return jsonify({'error': 'Model not found'}), 404
