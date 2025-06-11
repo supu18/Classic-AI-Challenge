@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import sys
 import json
-
+import os
 def predict(year,month, model_path):
     """
     Predict the number of alcohol-related accidents for a given year and month.
@@ -36,7 +36,8 @@ def predict(year,month, model_path):
     }
     # Return the predicted value
     return result
-model_path = '../models/alcohol_accidents_model.pkl'
+model_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'models', 'alcohol_accidents_model.pkl'))
+
 if len(sys.argv)<3:
     year = 2021
     month = 1
