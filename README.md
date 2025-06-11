@@ -78,6 +78,8 @@ Classic-AI-Challenge/
 # Visualization
 The project includes Jupyter notebooks for data exploration and visualization. These notebooks provide insights into the dataset and the results of the predictions.
 
+The plots are stored in the `results/` directory, and you can view them in your browser.
+
 # Data Preprocessing
 The data preprocessing script handles the following tasks:
 - Loading the dataset
